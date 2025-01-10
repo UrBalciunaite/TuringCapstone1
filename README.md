@@ -16,13 +16,13 @@ The applincation is still in MVP mode, meaning that some of the functionalities 
 In the project, 7 classes were created:
 
 1. RedisClient
-The main purpose for this class is to store an URL needed to connect to Redis, so that connections would be handled gracefully. Redis is used to store data in hash format about the user and their played tracks.
+- The main purpose for this class is to store an URL needed to connect to Redis, so that connections would be handled gracefully. Redis is used to store data in hash format about the user and their played tracks.
 2. User
-The class is used to create an instance of a user and save it to Redis database. Additional methods connected to User class and used throughout the code are load_user_from_redis, check if user_exists and delete_user.
+- The class is used to create an instance of a user and save it to Redis database. Additional methods connected to User class and used throughout the code are load_user_from_redis, check if user_exists and delete_user.
 3. SpotifyAPI
-The class is used to manage the Spotify account authentication, getting data about recently played tracks and interaction with the Spotify API in general. During account authorisation, SpotifyAPI class is used to direct_user_for_authentication and exchange_auth_code_to_access_refresh_tokens, when the callback is handled by SpotifyCallbacks class.
+- The class is used to manage the Spotify account authentication, getting data about recently played tracks and interaction with the Spotify API in general. During account authorisation, SpotifyAPI class is used to direct_user_for_authentication and exchange_auth_code_to_access_refresh_tokens, when the callback is handled by SpotifyCallbacks class.
 4. SpotifyCallbacks
-The class is used to handle a callback during Spotify account authorisation. For callbacks I chose to use Flask framework and ngrok tool for tunneling. Currently, I am running ngrok 
+- The class is used to handle a callback during Spotify account authorisation. For callbacks I chose to use Flask framework and ngrok tool for tunneling. Currently, I am running ngrok 
 
 # Comments on the project code
 
